@@ -1,0 +1,10 @@
+<div class="selected-value-container" *ngIf="selectedList.length > 0">
+    <ul class="list-value">
+        <li class="item-value" *ngFor="let selectedChip of selectedList;let i =index;">
+            <a class="text-value" href="javascript:void(0)" (click)="deSelect(selectedChip,i)">
+                {{selectedChip}}
+                <span class="close-icon">&times;</span>
+            </a>
+        </li>
+    </ul>
+</div>

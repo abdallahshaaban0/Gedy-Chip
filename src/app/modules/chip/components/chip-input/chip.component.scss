@@ -1,0 +1,27 @@
+.chip-container {
+
+    .d-flex {
+        display: flex;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 0 5px 5px 0;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #bfbfbf;
+        border-width: 1px 1px 1px 0;
+        font-family: system-ui;
+        margin-right: 5px;
+
+        &:focus {
+            outline: unset;
+        }
+    }
+}
+
+.left-border {
+    border-left: 1px solid #bfbfbf !important;
+    border-radius: 5px !important;
+    margin-left: 5px;
+}

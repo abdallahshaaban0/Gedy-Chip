@@ -1,0 +1,29 @@
+.options-list {
+    border: 1px solid #bfbfbf;
+    border-top: unset;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    list-style: none;
+
+    .option-item {
+        padding: 5px;
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        font-family: system-ui;
+
+        .option-text {
+            color: black;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: #bfbfbf;
+            color: black;
+        }
+    }
+}

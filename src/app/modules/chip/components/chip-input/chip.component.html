@@ -1,0 +1,12 @@
+<div class="chip-container">
+    <div class="d-flex">
+        <app-chip-result [selectedList]="selectedList" (onDeselect)="onDeSelect($event)"></app-chip-result>
+        <input class="search-input" [ngClass]="{'left-border':selectedList.length == 0}" #chipReference [value]="value"
+            type="text" (keyup)='searchList($event)'
+            [placeholder]="selectedList.length > 0 ? '':chipData.placeholder" (focus)="onInputFocus($event)"/>
+    </div>
+
+    <app-chip-option *ngIf="showList && chipData.dataList.length > 0" [dataList]="chipData.dataList"
+        (onItemSelected)="onItemSelected($event)">
+    </app-chip-option>
+</div>
